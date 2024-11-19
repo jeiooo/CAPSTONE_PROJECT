@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { createRoot } from "react-dom/client"; // Use createRoot for React 18+
+import Homepage from "./HomePage";
+
 
 export default class App extends Component {
     constructor(props) {
@@ -7,8 +9,12 @@ export default class App extends Component {
     }
 
     render() {
-        return <h1>Page under maintenance!</h1>;
-    }
+        return (
+          <div>
+            <Homepage />
+          </div>
+        );
+      }
 }
 
 // Get the root element
